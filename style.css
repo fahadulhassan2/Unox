@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  color: white;
+  font-family: "Poppins", sans-serif;
+ 
+ 
+
+}
+h1, h2, h3,h4,h5,h6{
+    font-family: 'PT Serif', serif !important;
+
+}
+header {
+  background-color: #fffffff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+ul {
+    list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+
+.nav-link, .nav-link {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+
+  }
+  .nav-link:hover{
+      opacity: 0.6;
+  }
+    .nav-link:after,   .nav-link:after {
+   
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    background: #000000;
+    opacity: 0.6;
+    transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+    width: 0;
+  }
+   .nav-link:hover:after,   .nav-link:hover:after {
+    width: 100%;
+    opacity: 0.9;
+  }
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+
+/* Header Section */
+
+
+.bg-video {
+    position: relative;
+    height: 95vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .bg-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .bg-video .container-fluid {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .bg-videoeader .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 2;
+  }
+  
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+   @media (pointer: coarse) and (hover: none) {
+    .bg-video {
+      background: url('./hero-video_zn0tww.webm') black no-repeat center center scroll;
+    }
+  
+    .bg-video video {
+      display: none;
+    }
+  } 
+
+  
+  .gal {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+
+  .gal:hover {
+    transform: scale(1.1) ;
+  }
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000000; 
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fffffff; 
+   
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+  }
+
+
+  
+.whiteunderline, .whiteunderline {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+
+  }
+ 
+    .whiteunderline:after,   .whiteunderline:after {
+   
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    background: #000000;
+    opacity: 0.6;
+    transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+    width: 0;
+  }
+   .whiteunderline:hover:after,   .whiteunderline:hover:after {
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .news{
+    position: relative;
+    display: block; 
+
+}
+.news .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    color: #FFFFFF;
+    
+   
+}
+.SubscribeBtn{
+    box-shadow: none !important;
+}
+.SubscribeBtn:hover{
+background-color: #232323 !important;
+}
