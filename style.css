@@ -10,7 +10,7 @@
 body {
   color: white;
   font-family: "Poppins", sans-serif;
- 
+  scroll-behavior: smooth !important;
  
 
 }
@@ -61,6 +61,31 @@ ul {
     width: 100%;
     opacity: 0.9;
   }
+
+  
+.nav-link1, .nav-link1 {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+  .nav-link1:after,   .nav-link1:after {
+ 
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  background: #ffffff;
+  
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+}
+ .nav-link1:hover:after,   .nav-link1:hover:after {
+  width: 100%;
+
+}
 
 
 #hamburger-icon {
@@ -259,4 +284,27 @@ ul {
 }
 .SubscribeBtn:hover{
 background-color: #232323 !important;
+}
+.privacypara{
+  font-size: 14px !important;
+}
+.footertext{
+  border: 1px solid #93A0A0 !important;
+}
+.footertext:hover{
+  transition: border 0.8s ease;
+  border: 1px solid #ffffff !important;
+}
+.footertext::placeholder { 
+  color: #a0a0a0 !important;
+  
+}
+
+.notificationCon:hover {
+  cursor: pointer;
+  background-color: #F6F6F6 !important;
+}
+.fa-brands:hover{
+  cursor: pointer;
+  color: #ffffff !important;
 }
