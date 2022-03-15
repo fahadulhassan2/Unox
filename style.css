@@ -314,3 +314,6 @@ background-color: #232323 !important;
   background-color: #e6e6e6 !important;
  
 }
+input:hover ,input:focus{
+  border-color: #000000 !important; 
+}
