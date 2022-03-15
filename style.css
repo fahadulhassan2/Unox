@@ -308,3 +308,9 @@ background-color: #232323 !important;
   cursor: pointer;
   color: #ffffff !important;
 }
+
+.googlebtn:hover
+{
+  background-color: #e6e6e6 !important;
+ 
+}
