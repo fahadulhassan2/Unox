@@ -20,34 +20,66 @@
   </head>
   <body>
 
-<div class="container-fluid sticky-top mx-auto bg-white border border-start-0 border-end-0 border-top-0 border-bottom-1">
 
-    <header class=" pt-1  mx-auto">
-        <div id="brand"><a href="/"><img class="img-fluid p-3" style="width: 8rem" src="./graphics/logo_dark.png" alt=""></a></div>
-        <nav class="mt-1">
-            <ul>
-                <li><a class="nav-link text-black m-0 px-0" href="./Drops.html">Drops</a></li>
-                <li><a class="nav-link text-black m-0 px-0 ms-4 " href="./marketplace.html">Marketplace</a></li>
-            </ul>
-        </nav>
-        <div class="d-flex mt-3">
-            <a href="./notification.html"><img class="" style="width: 1.1rem" src="./graphics/notification.svg" alt=""></a>
-            <a href=""><img class="mx-4" style="width: 1.4rem" src="./graphics/wallet.png" alt=""></a>
-            <a href=""><img class="" style="width: 1.4rem" src="./graphics/profile-icon.svg" alt=""></a>
-        </div>
-        
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu bg-black">
-                <li><a  href="/home">Drops</a></li>
-                <li><a  href="/products">Marketplace</a></li>
-            </ul>
-        </div>
-    </header>
+    <div class="container-fluid sticky-top mx-auto bg-white border border-start-0 border-end-0 border-top-0 border-bottom-1">
 
-</div>
+        <header class=" pt-1  mx-auto">
+            <div id="brand"><a href="/"><img class="img-fluid p-3" style="width: 8rem" src="./graphics/logo_dark.png" alt=""></a></div>
+            <nav class="mt-1">
+                <ul>
+                    <li><a class="nav-link text-black link m-0 px-0" href="./Drops.html">Drops</a></li>
+                    <li><a class="nav-link text-black link m-0 px-0 ms-4 " href="./marketplace.html">Marketplace</a></li>
+                </ul>
+            </nav>
+            <div class="d-flex mt-3">
+                <a href="./notification.html"><img class="" style="width: 1.1rem" src="./graphics/notification.svg" alt=""></a>
+                <div class="dropdown">
+                    <button class="border border-0 bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="mx-4" style="width: 1.4rem" src="./graphics/wallet.png" alt="">
+                    </button>
+                    <ul class="dropdown-menu px-4 py-3" aria-labelledby="dropdownMenuButton1">
+                        
+                        <li class="d-flex dropdown-item m-0 border border-1">
+                            <img class="mx-3" src="./graphics/metamask-logo.svg" alt=""> 
+                            <a class="text-black me-2 text-center text-decoration-none" href="#"> Switch to Polygon <br> Mainnet </a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="border border-0 bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="" style="width: 1.4rem" src="./graphics/profile-icon.svg" alt="">
+                    </button>
+                    <ul class="dropdown-menu mt-1 px-2 " aria-labelledby="dropdownMenuButton1">
+                      
+                        <li class="mx-3"><a class="dropdown-item px-3 " href="./profile.html" style="font-size: 14px;"><img class="me-2" style="width: 0.8rem;"src="./graphics/profile.png" alt=""> Profile</a></li>
+                        <li class="mx-3"><a class="dropdown-item px-3 " href="./dashboard.html" style="font-size: 14px;"><img class="me-2" style="width: 0.8rem;"src="./graphics/dashboard.png" alt=""> Dashboard</a></li>
+                            <hr>
+    
+                            <li class=""><a class="dropdown-item px-3  mx-2"  style="font-size: 14px;" href="#">Help Center</a></li>
+                            <li class=""><a class="dropdown-item px-3  mx-2"  style="font-size: 14px;" href="./login.html">Logout</a></li>
+                          
+                           </ul>
+                </div>
+            </div>
+            
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu bg-black">
+                    <li class=""><a class="fw-bold fs-2 text-start text-white text-decoration-none " href="./Drops.html"> <h1 class="display-2 fw-bold">Drops</h1> </a></li>
+                    <li class="mb-4"><a class="fw-bold fs-2 text-start text-white text-decoration-none" href="./marketplace.html"> <h1 class="display-2 fw-bold">Marketplace</h1> </a></li>
+                    <li><a class="text-start text-white text-decoration-none" href="./Reportblog/report.html">Help Center</a></li>
+                    <li><a class="text-start text-white text-decoration-none" href="./login.html">Logout</a></li>
+                    <li><div class="d-flex pt-3">
+                        <i class="fa-brands fa-twitter-square fa-lg" style="color: #ffffff;"></i>
+                        <i  class="mx-4 fa-brands fa-discord fa-lg" style="color: #ffffff;"></i>  
+                        <i class="fa-brands  fa-instagram fa-lg" style="color: #ffffff;"></i>
+                    </div></li>
+                </ul>
+            </div>
+        </header>
+    
+    </div>
 <div class="container mt-5">
     <h1 class="text-center fw-bold display-3">UNXD Drops</h1>
     <p class="text-center fs-5 mt-2">We pay tribute to the past while enabling the new and <br> futuristic. We mix the familiar with the futuristic.</p>
@@ -223,7 +255,7 @@
                 </div>
                 <div>
     
-                    <a class="text-decoration-none nav-link1 d-inline-block " style="color: #e6e6e6;"  href="">
+                    <a href="./Reportblog/report.html" class="text-decoration-none nav-link1 d-inline-block " style="color: #e6e6e6;"  href="">
                         Help Center
                     </a>
                 </div>
@@ -246,7 +278,7 @@
             <div class="d-flex pt-3">
                 <i class="fa-brands fa-twitter-square fa-lg" style="color: #a0a0a0;"></i>
                 <i  class="mx-4 fa-brands fa-discord fa-lg" style="color: #a0a0a0;"></i>  
-                <i class="fa-brands fa-instagram fa-lg" style="color: #a0a0a0;"></i>
+                <i class="fa-brands  fa-instagram fa-lg" style="color: #a0a0a0;"></i>
             </div>
         </div>
     </div>
@@ -254,22 +286,22 @@
         <div class="offset-lg-1 col-lg-5">
             <div class="pe-5">
             
-                    <p class="text-white float-end me-5  nav-link1 d-inline-block">Privacy Policy</p>
+                    <a href="./privacypolicy.html" class="text-white float-end me-5  nav-link1 d-inline-block">Privacy Policy</a>
                 
             </div>
            
         </div>
         <div class="col-lg-2">
             <div>
-                <p class="text-white nav-link1 d-inline-block">
-                    Terms of Service</p>
+                <a href="./termsConditions.html" class="text-white nav-link1 d-inline-block">
+                    Terms of Service</a>
             </div>
             
         </div>
         <div class="col-lg-3">
             <div>
-                <p class= "text-white nav-link1 d-inline-block">
-                    Report a Bug</p>
+                <a href="./Reportblog/report.html" class= "text-white nav-link1 d-inline-block">
+                    Report a Bug</a>
             </div>
         </div>
     </div>

@@ -22,32 +22,63 @@
   <body>
     <div class="container-fluid sticky-top mx-auto bg-white border border-start-0 border-end-0 border-top-0 border-bottom-1">
 
-      <header class=" pt-1  mx-auto">
-          <div id="brand"><a href="/"><img class="img-fluid p-3" style="width: 8rem" src="./graphics/logo_dark.png" alt=""></a></div>
-          <nav class="mt-1">
-              <ul>
-                  <li><a class="nav-link text-black m-0 px-0" href="./Drops.html">Drops</a></li>
-                  <li><a class="nav-link text-black m-0 px-0 ms-4 " href="./marketplace.html">Marketplace</a></li>
-              </ul>
-          </nav>
-          <div class="d-flex mt-3">
-              <a href="./notification.html"><img class="" style="width: 1.1rem" src="./graphics/notification.svg" alt=""></a>
-              <a href=""><img class="mx-4" style="width: 1.4rem" src="./graphics/wallet.png" alt=""></a>
-              <a href=""><img class="" style="width: 1.4rem" src="./graphics/profile-icon.svg" alt=""></a>
-          </div>
-          
-          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-              <ul class="mobile-menu bg-black">
-                  <li><a  href="/home">Drops</a></li>
-                  <li><a  href="/products">Marketplace</a></li>
-              </ul>
-          </div>
-      </header>
-  
-  </div>
+        <header class=" pt-1  mx-auto">
+            <div id="brand"><a href="/"><img class="img-fluid p-3" style="width: 8rem" src="./graphics/logo_dark.png" alt=""></a></div>
+            <nav class="mt-1">
+                <ul>
+                    <li><a class="nav-link text-black link m-0 px-0" href="./Drops.html">Drops</a></li>
+                    <li><a class="nav-link text-black link m-0 px-0 ms-4 " href="./marketplace.html">Marketplace</a></li>
+                </ul>
+            </nav>
+            <div class="d-flex mt-3">
+                <a href="./notification.html"><img class="" style="width: 1.1rem" src="./graphics/notification.svg" alt=""></a>
+                <div class="dropdown">
+                    <button class="border border-0 bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="mx-4" style="width: 1.4rem" src="./graphics/wallet.png" alt="">
+                    </button>
+                    <ul class="dropdown-menu px-4 py-3" aria-labelledby="dropdownMenuButton1">
+                        
+                        <li class="d-flex dropdown-item m-0 border border-1">
+                            <img class="mx-3" src="./graphics/metamask-logo.svg" alt=""> 
+                            <a class="text-black me-2 text-center text-decoration-none" href="#"> Switch to Polygon <br> Mainnet </a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="border border-0 bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="" style="width: 1.4rem" src="./graphics/profile-icon.svg" alt="">
+                    </button>
+                    <ul class="dropdown-menu mt-1 px-2 " aria-labelledby="dropdownMenuButton1">
+                      
+                        <li class="mx-3"><a class="dropdown-item px-3 " href="./profile.html" style="font-size: 14px;"><img class="me-2" style="width: 0.8rem;"src="./graphics/profile.png" alt=""> Profile</a></li>
+                        <li class="mx-3"><a class="dropdown-item px-3 " href="./dashboard.html" style="font-size: 14px;"><img class="me-2" style="width: 0.8rem;"src="./graphics/dashboard.png" alt=""> Dashboard</a></li>
+                            <hr>
+    
+                            <li class=""><a class="dropdown-item px-3  mx-2"  style="font-size: 14px;" href="#">Help Center</a></li>
+                            <li class=""><a class="dropdown-item px-3  mx-2"  style="font-size: 14px;" href="./login.html">Logout</a></li>
+                          
+                           </ul>
+                </div>
+            </div>
+            
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu bg-black">
+                    <li class=""><a class="fw-bold fs-2 text-start text-white text-decoration-none " href="./Drops.html"> <h1 class="display-2 fw-bold">Drops</h1> </a></li>
+                    <li class="mb-4"><a class="fw-bold fs-2 text-start text-white text-decoration-none" href="./marketplace.html"> <h1 class="display-2 fw-bold">Marketplace</h1> </a></li>
+                    <li><a class="text-start text-white text-decoration-none" href="./Reportblog/report.html">Help Center</a></li>
+                    <li><a class="text-start text-white text-decoration-none" href="./login.html">Logout</a></li>
+                    <li><div class="d-flex pt-3">
+                        <i class="fa-brands fa-twitter-square fa-lg" style="color: #ffffff;"></i>
+                        <i  class="mx-4 fa-brands fa-discord fa-lg" style="color: #ffffff;"></i>  
+                        <i class="fa-brands  fa-instagram fa-lg" style="color: #ffffff;"></i>
+                    </div></li>
+                </ul>
+            </div>
+        </header>
+    
+    </div>
   <div class="container">
       <div class="text-center pt-5 pb-3">
           
@@ -55,120 +86,236 @@
           <p class=" text-black-50 py-3">Last Updated: December 22, 2020</p>
         </div>
         <div class="row justify-content-center">
-            <div class="col-lg-6 text-dark privacypara">
+            <div class="col-lg-6 text-dark privacypara mb-5 pb-5">
                 <p>UNXD Inc. (“we”, “us”, “our”) is committed to the highest standards of privacy and data protection.</p>
-                <p>If you are a resident of the European Union, you are protected by and enjoy rights under the European Union’s General Data Protection Regulation 2016/679 (“GDPR”).</p>
-         <p>This privacy policy applies to personal information which is collected and/or used by Nervora in its capacity as a data controller and/or data processor as defined in the GDPR. Irrespective of your residency status, if Nervora uses your personally identifiable information (“PII”) then you have important rights which you can exercise, depending on how and why Nervora uses your information. If you have any questions about how we interact with your personal information, please contact legal@unxd.com</p>
+                <p>If you are a resident of the European Union, you are protected by and enjoy rights under the European Union’s General Data Protection Regulation 2016/679 (“<strong>GDPR</strong>”).</p>
+         <p>This privacy policy applies to personal information which is collected and/or used by Nervora in its capacity as a data controller and/or data processor as defined in the GDPR. Irrespective of your residency status, if Nervora uses your personally identifiable information (“<strong>PII</strong>”) then you have important rights which you can exercise, depending on how and why Nervora uses your information. If you have any questions about how we interact with your personal information, please contact <a class="fw-bold text-black" href="">legal@unxd.com</a></p>
        <p>This Privacy Policy sets out how and why we collect, store, use, transfer and disclose information and how you may access your personal information and correct it. This Privacy Policy also explains the use of cookies on our mobile application, web services, and platforms such as unxd.com, vogue.me, wired.me, and unxd.com, any other linked and related network, ecosystem, pages, content, features, products, and tools offered by us via any kind of digital platform (“Platforms”)</p>
-    <p>For the purposes of the GPDR, the relevant legal entity is UNXD Inc. and our nominated Data Protection Officer can be reached at legal@unxd.com (please include ‘Personal Data’ in the email subject).</p>   
+    <p>For the purposes of the GPDR, the relevant legal entity is UNXD Inc. and our nominated Data Protection Officer can be reached at <a class="fw-bold text-black" href="">legal@unxd.com</a> (please include ‘Personal Data’ in the email subject).</p>   
                 <h3 class="fw-bold pt-3">Where do we collect information from?</h3>
                 <p>We collect information, both general and personal, in a number of ways, as detailed in this Privacy Policy, which is derived from or accessed chiefly those using the Platforms (in particular account holders) but may also comprise other categories such as event guests and job applicants. Nervora collects information including PII, demographics, web analytics, app analytics, and transactions.</p>
                 <p>n the case of PII, we collect information only insofar as it is and remains necessary to fulfil the purpose of your interaction with us. We do not use or disclose PII other than as described in this Privacy Policy.</p>
                 <p>You may refuse to provide us with PII, and you may object to our collection of information, however this may impact your ability to use or benefit from our Platform, and our ability to provide you with support or assistance.</p>
                 <p>You must not provide us with the personal information about another person unless you have first obtained that person’s prior consent to do so and you have told them their personal information will be handled in accordance with this Privacy Policy (including where to find it).</p>
                 <h3 class="fw-bold pt-3">Nervora as a data controller</h3>
-                <p>Nervora may also be a data processor in that it deals with personal data provided by, and as instructed by, a data controller (such as a payment gateway) for specific purposes. In such cases, data is provided to us in strict confidence and subject to restrictive undertakings on its use and disclosure.</p>
+                <p>Nervora is a data controller in that it determines the purposes for which, and the way in which, personal data is collected and processed.</p>
+                <p>Use of the UNXD Platform ("<strong>UNXD</strong>") requires acceptance of our site terms of use located at <a class="fw-bold text-black" href="./termsCondition.html"> https://unxd.com/terms.</a></p>
+                <p>In respect of personal information collected via the Platforms, your continued use of the Platforms constitutes your understanding of, and your agreement to, the practices described in this privacy policy and elsewhere on the websites as well as any subsequent updates.</p>
                 <h3 class="fw-bold pt-3">When do we collect data?</h3>
                 <p>We collect information about you when you:</p>
                 <ul style="list-style-type: disc;">
                     <li class="mt-2" >Use the website or app, or other aspect of the Platform</li>
                     <li class="mt-2" >Contact Nervora, whether or not you engage with Nervora for business purposes</li>
-                    <li class="mt-2" >Apply for a job at Nervora</li>
-                    <li class="mt-2" >Visit the Nervora offices</li>
+                    <li class=" mt-2 " >Apply for a job at Nervora</li>
+                    
+                    <li class="mt-2 " >
+                        Visit the Nervora offices</li>
                     <li class="mt-2" >Attend an event hosted or sponsored by Nervora, whether online or offline</li>
-                    <li class="mt-2" >Interact with our social media channels</li>
-                    <li class="mt-2" >Display an NFT purchased from UNXD</li>
+                    <li class="mt-2 " >Interact with our social media channels</li>
+                    <li class="mt-2 " >Display an NFT purchased from UNXD</li>
                     <li class="mt-2" >Sign up for email newsletters</li>
                 </ul>
                 <h3 class="fw-bold pt-3">Why do we collect data?</h3>
-            <p>Nervora collects data in order to make informed strategic and commercial decisions for ourselves and on behalf of our clients.</p>
-            <p>For example, Nervora aims to develop a deep understanding of market trends to make informed predictions on brand engagement by certain demographic segments in specific markets and to provide relevant, personalised experiences.</p>
-            <p>Nervora may generate revenue – directly or indirectly – from the data it collects but will never disclose or share PII data beyond the bounds of any privacy policy that was in play during the capture of applicable data.</p>
-            
+                <p>Nervora collects data in order to make informed strategic and commercial decisions for ourselves and on behalf of our clients.</p>
+                <p>For example, Nervora aims to develop a deep understanding of market trends to make informed predictions on brand engagement by certain demographic segments in specific markets and to provide relevant, personalised experiences.</p>
+                <p>Nervora may generate revenue – directly or indirectly – from the data it collects but will never disclose or share PII data beyond the bounds of any privacy policy that was in play during the capture of applicable data.</p>
+                <h3 class="fw-bold pt-3">What information do we collect?</h3>
+                <p>When you use our Platform, including any mobile applications (apps), you provide us with PII that may include your name, email address, phone number, and location.</p>
+                <p>For example, you may provide us with an email address to receive marketing material or updates about our services, a phone number so that we provide you with a one-time password (“OTP”) , or your name and payment information when you purchase a product or service.</p>
+                <p>While you use our Platforms, we collect general information of the sort that web browsers, servers and network operators typically make available, such as unique identifiers (e.g. persistent cookies, MAC addresses, device IDs, IMEI numbers), browser type and settings, location data, device type and settings, operating system, IP address, mobile network information including operator name and phone number and application version number, language preferences, crash reports, system activity, and the date, time and referral URL of each visitor request. This information helps us troubleshoot problems, understand how visitors use our Platforms, allocate and balance resources, and improve our products and services.</p>
+                <p>Some of this information could be personally-identifiable (that is they could be used to directly or indirectly identify you as an individual and natural person)—information like IP addresses, phone numbers, and [TBC]. We treat such information in the same way that we treat all other personal information (such as your name), and will only use and disclose such personal information as described in this Privacy Policy.</p>
+                <p>As you use our Platform, we collect information about how you interact with our platform and how you use our services (your activity), such as the links that you click, content that you view, terms, products, and services that you search for, products that you buy, people you communicate or share information with, and how you interact with advertisements.</p>
+                <p>We collect information about your activity to understand how you use and interact with our Platforms, and our partners’ products and services. This helps us and our partners to understand customer preferences, optimise our Platforms, allocate and balance resources, and improve our products and services.</p>
+                <h3 class="fw-bold pt-3">How do we use information?</h3>
+                <p>We collect information to enable you to receive the benefit of our Platforms and for our partners to optimise their service offerings.</p>
+                <p>Subject to this Privacy Policy and your data preferences, we may use the information we collect for some or all of the following purposes:</p>
+                <ul style="list-style-type: disc">
+                            <li class="mt-2">Subject to this Privacy Policy and your data preferences, we may use the information we collect for some or all of the following purposes:</li>
+                            <li class="mt-2">Administering your access to our Platforms</li>
+                            <li class="mt-2">Maintaining, troubleshooting, and improving our Platforms</li>
+                            <li class="mt-2">Developing new products and services;</li>
+                            <li class="mt-2">If your preferences permit, to provide you with recommendations and personalised products and services;</li>
+                            <li class="mt-2">Measuring performance of our Platforms;
+                            </li> 
+                           
+                            <li class="mt-2">Meeting our legal, regulatory, and tax reporting obligations;</li>
+                            <li class="mt-2">Communicating with you about our Platforms, such as to notifying of changes and updates, alert you to data or security breaches, and to provide you with customer support;</li>
+                            <li class="mt-2">Creating or distributing promotional and marketing material that is relevant to you;</li>
+                            <li class="mt-2">For quality assurance and training purposes;</li>
+                            <li class="mt-2">In the case of non-personally identifiable information only—or personal information only with your explicit consent—to promote and market ourselves, our products and services, and our websites (including any social media pages maintained or operated by us such as Facebook, Instagram, Snapchat, Twitter, YouTube etc); and</li>
+                            <li class="mt-2">Developing new products and services;</li>
+                            <li class="mt-2">Any other uses identified to you at the time of collecting your personal information or as reasonably contemplated by this Privacy Policy and our <a class="fw-bold text-black" href="./termsCondition.html"> Terms,</a>(“Purposes”).</li>
+                            <li class="mt-2">Developing new products and services;
+                                <p>Where the use of personal or PII is not necessary for any of the Purposes we will process PII using an automated process in such a way as to render it non-personally identifiable before use (pseudonymisation).</p>
+                                <p>PII we collect stays within the Nervora family, other than in the following circumstances:</p>
+                            </li>
+                            <li class="mt-2">When you give us explicit consent to share your data;</li>
+                            <li class="mt-2">When we share it with our affiliates, partners, and other trusted organisations we work with;</li>
+                            <li class="mt-2">When we share it with trusted external service providers and data processors such as data centres, web hosts, cloud storage and cloud software providers, customer support providers, payment processors, debt collectors, accountants, and insurers;</li>
+                            <li class="mt-2">When we share it with prospective sellers or buyers of our business or assets; or</li>
+                            <li class="mt-2">When we share it with regulators and other relevant parties for the purpose of legal or contractual compliance, reporting purposes, or when we believe in good faith that disclosure is reasonably necessary to protect our property or rights, or the rights of third parties or the public at large.
+                                <p>Nervora may also automatically collect personal information (through the use of Cookies or similar technologies, including your IP address, device identifier, browsing patterns on its websites, click stream data, and HTP protocol elements) to ensure the effective operation of our website or in order to align the presentation of our products or services more closely to your requirements (for example, processing information about your broad geographic location to serve you with a local version of this website). This tracking information is stored in an anonymous, aggregated and non-personal format, and is also used to understand and analyze trends, to administer the websites, and to learn about user behavior on the websites.</p>
+                                <p>When you use the Nervora app – or any other app running on the Nervora platform – we collect information about your location and what you are doing within the app, including all details of any transactions.</p>
+                                <p>In certain instances, Nervora may use IP addresses to help identify you when Nervora feels, in its sole discretion, that it is necessary to enforce compliance with this Privacy Policy, to protect its services, websites, systems, information, employees, business partners, subsidiaries, affiliates, users, customers or others, or when required by law or for law enforcement purposes.</p>
+                            </li>
+                        
+                </ul>
+                <h3 class="fw-bold pt-3">How long we hold PII</h3>
+                <p>Nervora retains your personal information for the period of time required for the purposes for which it was collected, any compatible purposes which we subsequently establish, or any new purposes to which you subsequently consent, or to comply with legal, regulatory and Nervora policy requirements.</p>
+                <h3 class="fw-bold pt-3">Your right of access</h3>
+                <p>You may access and review any personal information we hold about you. On your specific request we will be able to, as soon as reasonably possible, provide you with some or all of (as requested) the following information, where available</p>
+                <ul style="list-style-type: disc;">
+                    <li class="mt-2">Personal data about you that is in our possession or under our control and the source of such data;</li>
+                    <li class="mt-2">The ways in which your personal data has been or may have been used or processed by us, including the logic behind any automated decisions (if applicable), during the two years preceding the date of the request;</li>
+                    <li class="mt-2">The ways in which your personal data has been or may have been disclosed by us, and information on to whom or to which categories of recipients such data has been disclosed, during the two years preceding the date of the request;</li>
+                    <li class="mt-2">How long we expect to hold on to your data, or if specific information is not available, the criteria we use to determine such a time period; and</li>
+                    <li class="mt-2">The purpose of any use, processing, or disclosure.
+                        <p class="mt-3">However, we reserve the right not to provide you with your personal data or other related information if providing it could reasonably be expected to:</p>
+                    </li>
+                    <li class="mt-2">Threaten the safety or physical or mental health of another individual;</li>
+                    <li class="mt-2">Cause immediate or grave harm to your safety, physical or mental health;</li>
+                    <li class="mt-2">Reveal personal data about another individual;</li>
+                    <li class="mt-2">Reveal the identity of an individual who has provided personal data about another individual and the individual providing the personal data does not consent to the disclosure of his identity; or</li>
+                    <li class="mt-2">Affect the prevention, investigation, detection, and prosecution of criminal offences, or of breaches of ethics for regulated professions; or</li>
+                    <li class="mt-2">Be contrary to national and public security, defence needs, or the national interest (including important economic, financial, monetary, budgetary and taxation matters).
+                        <p class="mt-3">If you wish to exercise your right of access, you should contact us at <a class="fw-bold text-black" href="">legal@unxd.com</a> and we will respond to your request within 4 business days of the request being made. We aim to process all requests within a month for simple requests, however complex and/or voluminous requests may take up to three months to process. If we deny you access, we will provide our reason for doing so at the time of your request.</p>
+                        <p>We do not typically charge a fee for reasonable requests for access to your personal information. However, we may charge a reasonable fee, which will be notified to you before we move forward with the request, for time and cost in the following circumstances:</p>
+                    </li>
+                    <li class="mt-2">If an extended amount of time is required to collate and prepare material for you; and</li>
+                    <li class="mt-2">If you wish to receive and we are able to provide hard copies or physical media (i.e. CDs, USB drives or other storage media).</li>
+                </ul>
+                <h3 class="fw-bold pt-3">Your right to rectification and erasure</h3>
+                <p>Please contact us at <a class="fw-bold text-black" href="">legal@unxd.com</a> as soon as possible if there are any changes to your personal information or if you believe the personal information we hold about you is not accurate, complete, up-to-date, no longer necessary for the purpose for which it was collected or processed, or lacks a valid legal ground for processing so that we can update your file accordingly.</p>
+                <p>Depending on the circumstance we may change, erase, or block from use any inaccurate, incomplete, or outdated information. We may require documentary proof or evidence for certain requests</p>
+                <p>We will process any legitimate requests to correct inaccurate data as soon as practicable, and incomplete data within a reasonable time frame, and send the update personal data to other organisations to which the data was disclosed during the year preceding the date of the correction, unless it is impossible, involves disproportionate effort, the other organisations no longer require the corrected personal data for any legal or business purpose, or you otherwise agree that we do not need to resend the corrected information to any other organisation.</p>
+                <p>Right to object to the collection of personal data due to your personal situation</p>
+                <p>You may object to collection of specific personal data on limited grounds due to your personal situation. Please contact us at <a class="fw-bold text-black" href="">legal@unxd.com</a> if you wish to make such a request, along with details of your personal situation and your reasons for objection. We will respond to all requests within a reasonable time frame. If we disallow your objection, we will inform you of our reasons for doing so.</p>
+                <h3 class="fw-bold pt-3">Accuracy</h3>
+                <p>We take all reasonable steps within our control to ensure that the personal information we hold about you is accurate.</p>
+                <p>We also take reasonable steps to ensure that the information is complete and up-to-date. However, we also rely on you to advise us of any changes to your personal information.</p>
+
+                <h3 class="fw-bold pt-3">Protection of personal data</h3>
+                <p>We take seriously the security of your data and will aim to take all steps that may be necessary to ensure that your personal information is treated securely and to prevent unauthorised access, collection, use, disclosure, copying, modification, disposal or similar risks.</p>
+                <p>Although we aim to create a safe and secure environment by trying to limit access to the Platforms to legitimate users, we obviously cannot provide any guarantees that unauthorised parties will not gain access. To the extent permitted by applicable law, we expressly exclude any liability arising from any unauthorised access to your personal information.</p>
+                <p>We will inform you without undue delay unless the risk to your individual rights and freedoms is low—such as if the compromised data was well encrypted.</p>
+                <p>Please contact us at <a class="fw-bold text-black" href="">legal@unxd.com</a> immediately if you become aware of any unauthorised use of your account by anyone else or any other breach of security.</p>
+                <h3 class="fw-bold pt-3">Retention of personal data</h3>
+                <p>We will cease to retain documents containing personal data, or remove the means by which the personal data can be associated with particular individuals, as soon as it is reasonable to assume that the Purpose for which that personal data was collected or further processed is no longer being served by retention of the personal data.</p>
+                <h3 class="fw-bold pt-3">Data transfers</h3>
+                <p>Your information may be processed outside of the country where you live. Regardless of where we use, process, or store your data, we will comply with the protections set out in this Privacy Policy.</p>
+                <h3 class="fw-bold pt-3">Cookies</h3>
+                <p>To make certain of our Platforms work properly, we sometimes place small data files called cookies on your device. Most well-known websites do this too.</p>
+                <p>A cookie is a small text file that a website stores on a visitor’s computer, and that the visitor’s browser provides to the website each time the visitor returns. It enables the website to remember your actions and preferences (such as login, language, font size and other display preferences), so you don’t have to keep re-entering them whenever you come back to the Platforms or browse from one page to another.</p>
+                <p>Our Platforms use cookies to help us identify you from other users, track your usage of our Platforms, and your website access preferences. We do or may use the following cookies:</p>
+                <ul style="list-style-type: disc;">
+                        <li class="mt-2">Strictly necessary cookies. These are cookies that are required for the operation of our Platforms. They include, for example, cookies that enable you to log into secure areas of our Platforms, use a shopping cart or make use of e-billing services.</li>
+                        <li class="mt-2">Analytical/performance cookies. They allow us to recognise and count the number of visitors and to see how visitors move around our Platforms when they are using them. This helps us to improve the way our Platforms work, for example, by ensuring that users are finding what they are looking for easily.</li>
+                        <li class="mt-2">Functionality cookies. These are used to recognise you when you return to our Platforms. This enables us to personalise our content for you, greet you by name and remember your preferences (for example, your choice of language or region).</li>
+                        <li class="mt-2">Targeting cookies. These cookies record your visit to our Platforms, the pages you have visited and the links you have followed. We will use this information to make our Platforms and the advertising displayed on it more relevant to your interests. We may also share this information with third parties for this purpose.</li>
+                </ul>
+                <p>Please note that third parties (including, for example, advertising networks and providers of external services like web traffic analysis services) may also use cookies, over which we have no control. These cookies are likely to be analytical/performance cookies or targeting cookies.</p>
+                <p>You can control and/or delete cookies as you wish—for details, see www.aboutcookies.org. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit our Platforms and some services and functionalities may not work.</p>
+                <p>You can easily accept or reject the cookies on our Platforms.</p>
+                <h3 class="fw-bold pt-3">Business transfer</h3>
+                <p>If we, or substantially all of our assets, were acquired, or in the event that we go out of business or enter bankruptcy, user information would be one of the assets that is transferred or acquired by a third party. You acknowledge and agree that if such transfers occur, that any acquirer of our business may continue to use your personal information as set forth in this Privacy Policy.</p>
+                <p>Use of personal information for direct marketing</p>
+                <p>From time to time we may use the personal information we collect from you to identify particular products and services that we believe may be of interest to you.</p>
+                <p>We may then contact you to let you know about these products and services, new features and how they may benefit you, solicit your feedback, or just keep you up to date with what’s going on with us and our products and services and/or products.</p>
+                <p>Direct marketing from us generally takes the form of an electronic marketing email. Where we use your personal information to send you marketing information by email, SMS, MMS or other electronic means we may do so with your express or deemed consent. Every directly addressed marketing contact sent or made by us will include a means by which you may unsubscribe (or opt out) of receiving further marketing information.</p>
+                <p>Additionally, you may instruct us at any time to remove any previous consent you provided to receive marketing communications from us. You can contact us at <a class="fw-bold text-black" href="">legal@unxd.com</a> to make a request.</p>
+                <h3 class="fw-bold pt-3">Links to third party websites</h3>
+                <p>Our Platforms may contain links to and from third party websites.</p>
+                <p>If you click on such links, you do so at your own risk and subject to whatever privacy policy and/or website terms may govern the use of such websites. We have no control over, and are not responsible, nor liable for, the content, privacy practices or website terms of such websites or any information you provide to them.</p>
+                <p>You should read the privacy policy of these third parties to find out how they handle your personal information when you visit their websites.</p>
+                <h3 class="fw-bold pt-3">Privacy complaints</h3>
+                <p>If you believe that we have breached your privacy rights in any way, or you would like to discuss any issues about our Privacy Policy please contact us at <a class="fw-bold text-black" href="">legal@unxd.com . </a> All such enquiries or complaints will be taken seriously and will be handled as soon as reasonably practicable and/or make improvements to our systems and processes.</p>
+                <h3 class="fw-bold pt-3">Privacy Policy changes</h3>
+                <p>We may change our Privacy Policy from time to time, and in our sole discretion. We encourage you to frequently check our Platforms for any changes to our Privacy Policy. We will not reduce or diminish your rights under this Privacy Policy without your explicit consent. If any changes do not reduce or diminish your rights, your continued use of our Platforms, services, requesting our assistance or the provision of further personal information to us (directly or via an authorised person) after any change in this Privacy Policy will constitute your acceptance of such change. If we make significant changes to this Privacy Policy, we will provide a more prominent notice of the changes, such as by emailing you.</p>
             </div>
         </div>
   </div>
 <!-- footer -->
 <div class="container-fluid bg-black py-5 ">
-  <div class=" row py-5 mb-5">
-      <div class="offset-lg-1 col-lg-5">
-          <div>
-              <img style="width: 8rem" class="img-fluid" src="./graphics/logo_white.png" alt="">
-          </div>
-          <p class=" pt-5 " style="color: #a0a0a0; font-size: 14px;">
-              UNXD is a curated marketplace for the best of digital <br> luxury and culture.
-          </p>
-      </div>
-      <div class="col-lg-2">
-          <div>
-              <p class="fs-5 text-white">Navigate</p>
-          </div>
-          <p class="text-white pt-3 " style="color: #93A0A0;">
-              <div>
-  
-                  <a href="./Drops.html" class="text-decoration-none nav-link1 d-inline-block  " style="color: #e6e6e6;" href="">
-                      Drops
-                  </a>
-              </div>
-              <div>
-  
-                  <a href="./about.html" class="text-decoration-none  nav-link1 d-inline-block my-2" style="color: #e6e6e6;"  href="">
-                      About
-                  </a>
-              </div>
-              <div>
-  
-                  <a class="text-decoration-none nav-link1 d-inline-block " style="color: #e6e6e6;"  href="">
-                      Help Center
-                  </a>
-              </div>
-          </p>
-      </div>
-      <div class="col-lg-3">
-          <div>
-              <p class="fs-5 text-white">Newsletter</p>
-          </div>
-          <p class=" pt-3 " style="color: #a0a0a0; font-size: 14px;">
-              Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating UNXD.
-          </p>
-         
-              <div class="d-flex my-4 py-1 ">        
-                  <input type="email" placeholder="Email"  class="footertext rounded-1 py-2 form-control shadow shadow-none  bg-black text-white " id="inputEmail4">
-                  <a class="btn btn-primary ms-3 pt-2 border border-0  bg-white text-dark" href="">Subscribe</a>
-              </div>
-            
-       
-          <div class="d-flex pt-3">
-              <i class="fa-brands fa-twitter-square fa-lg" style="color: #a0a0a0;"></i>
-              <i  class="mx-4 fa-brands fa-discord fa-lg" style="color: #a0a0a0;"></i>  
-              <i class="fa-brands fa-instagram fa-lg" style="color: #a0a0a0;"></i>
-          </div>
-      </div>
-  </div>
-  <div class=" row">
-      <div class="offset-lg-1 col-lg-5">
-          <div class="pe-5">
-          
-                  <p class="text-white float-end me-5  nav-link1 d-inline-block">Privacy Policy</p>
+    <div class=" row py-5 mb-5">
+        <div class="offset-lg-1 col-lg-5">
+            <div>
+                <img style="width: 8rem" class="img-fluid" src="./graphics/logo_white.png" alt="">
+            </div>
+            <p class=" pt-5 " style="color: #a0a0a0; font-size: 14px;">
+                UNXD is a curated marketplace for the best of digital <br> luxury and culture.
+            </p>
+        </div>
+        <div class="col-lg-2">
+            <div>
+                <p class="fs-5 text-white">Navigate</p>
+            </div>
+            <p class="text-white pt-3 " style="color: #93A0A0;">
+                <div>
+    
+                    <a href="./Drops.html" class="text-decoration-none nav-link1 d-inline-block  " style="color: #e6e6e6;" href="">
+                        Drops
+                    </a>
+                </div>
+                <div>
+    
+                    <a href="./about.html" class="text-decoration-none  nav-link1 d-inline-block my-2" style="color: #e6e6e6;"  href="">
+                        About
+                    </a>
+                </div>
+                <div>
+    
+                    <a href="./Reportblog/report.html" class="text-decoration-none nav-link1 d-inline-block " style="color: #e6e6e6;"  href="">
+                        Help Center
+                    </a>
+                </div>
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <div>
+                <p class="fs-5 text-white">Newsletter</p>
+            </div>
+            <p class=" pt-3 " style="color: #a0a0a0; font-size: 14px;">
+                Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating UNXD.
+            </p>
+           
+                <div class="d-flex my-4 py-1 ">        
+                    <input type="email" placeholder="Email"  class="footertext rounded-1 py-2 form-control shadow shadow-none  bg-black text-white " id="inputEmail4">
+                    <a class="btn btn-primary ms-3 pt-2 border border-0  bg-white text-dark" href="">Subscribe</a>
+                </div>
               
-          </div>
          
-      </div>
-      <div class="col-lg-2">
-          <div>
-              <p class="text-white nav-link1 d-inline-block">
-                  Terms of Service</p>
-          </div>
-          
-      </div>
-      <div class="col-lg-3">
-          <div>
-              <p class= "text-white nav-link1 d-inline-block">
-                  Report a Bug</p>
-          </div>
-      </div>
-  </div>
-  </div>
+            <div class="d-flex pt-3">
+                <i class="fa-brands fa-twitter-square fa-lg" style="color: #a0a0a0;"></i>
+                <i  class="mx-4 fa-brands fa-discord fa-lg" style="color: #a0a0a0;"></i>  
+                <i class="fa-brands  fa-instagram fa-lg" style="color: #a0a0a0;"></i>
+            </div>
+        </div>
+    </div>
+    <div class=" row">
+        <div class="offset-lg-1 col-lg-5">
+            <div class="pe-5">
+            
+                    <a href="./privacypolicy.html" class="text-white float-end me-5  nav-link1 d-inline-block">Privacy Policy</a>
+                
+            </div>
+           
+        </div>
+        <div class="col-lg-2">
+            <div>
+                <a href="./termsConditions.html" class="text-white nav-link1 d-inline-block">
+                    Terms of Service</a>
+            </div>
+            
+        </div>
+        <div class="col-lg-3">
+            <div>
+                <a href="./Reportblog/report.html" class= "text-white nav-link1 d-inline-block">
+                    Report a Bug</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
   
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
