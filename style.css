@@ -349,3 +349,33 @@ input:hover ,input:focus,select:hover,select:focus,textarea:hover,textarea:focus
 .followBtn:hover{
   text-decoration: underline !important;
 }
+.createBtn:hover{
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+
+.accordion-item {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #00000;
+  color: #000000 !important;
+}
+
+.accordion-button {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #343a4000 !important;
+  color: #000000 !important;
+  font-weight: 500!important;
+}
+
+
+.accordion-collapse {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: #ffffff !important;
+  margin-top: 0.5rem;
+  color: #000000;
+  padding: 0 1rem 1rem 1rem !important;
+}

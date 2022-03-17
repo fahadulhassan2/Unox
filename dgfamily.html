@@ -1,0 +1,395 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./graphics/favicon-128.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-128.png" sizes="128x128">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d64fbd5a49.js" crossorigin="anonymous"></script>
+    <title>UNXD</title>
+  </head>
+  <body>
+
+<div class="container-fluid sticky-top mx-auto bg-white border border-start-0 border-end-0 border-top-0 border-bottom-1">
+
+    <header class=" pt-1  mx-auto">
+        <div id="brand"><a href="/"><img class="img-fluid p-3" style="width: 8rem" src="./graphics/logo_dark.png" alt=""></a></div>
+        <nav class="mt-1">
+            <ul>
+                <li><a class="nav-link text-black link m-0 px-0" href="./Drops.html">Drops</a></li>
+                <li><a class="nav-link text-black link m-0 px-0 ms-4 " href="./marketplace.html">Marketplace</a></li>
+            </ul>
+        </nav>
+        <div class="d-flex mt-3">
+            <a href="./notification.html"><img class="" style="width: 1.1rem" src="./graphics/notification.svg" alt=""></a>
+            <div class="dropdown">
+                <button class="border border-0 bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="mx-4" style="width: 1.4rem" src="./graphics/wallet.png" alt="">
+                </button>
+                <ul class="dropdown-menu px-4 py-3" aria-labelledby="dropdownMenuButton1">
+                    
+                    <li class="d-flex dropdown-item m-0 border border-1">
+                        <img class="mx-3" src="./graphics/metamask-logo.svg" alt=""> 
+                        <a class="text-black me-2 text-center text-decoration-none" href="#"> Switch to Polygon <br> Mainnet </a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="border border-0 bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="" style="width: 1.4rem" src="./graphics/profile-icon.svg" alt="">
+                </button>
+                <ul class="dropdown-menu mt-1 px-2 " aria-labelledby="dropdownMenuButton1">
+                  
+                    <li class="mx-3"><a class="dropdown-item px-3 " href="./profile.html" style="font-size: 14px;"><img class="me-2" style="width: 0.8rem;"src="./graphics/profile.png" alt=""> Profile</a></li>
+                    <li class="mx-3"><a class="dropdown-item px-3 " href="./dashboard.html" style="font-size: 14px;"><img class="me-2" style="width: 0.8rem;"src="./graphics/dashboard.png" alt=""> Dashboard</a></li>
+                        <hr>
+
+                        <li class=""><a class="dropdown-item px-3  mx-2"  style="font-size: 14px;" href="#">Help Center</a></li>
+                        <li class=""><a class="dropdown-item px-3  mx-2"  style="font-size: 14px;" href="./login.html">Logout</a></li>
+                      
+                       </ul>
+            </div>
+        </div>
+        
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu bg-black">
+                <li class=""><a class="fw-bold fs-2 text-start text-white text-decoration-none " href="./Drops.html"> <h1 class="display-2 fw-bold">Drops</h1> </a></li>
+                <li class="mb-4"><a class="fw-bold fs-2 text-start text-white text-decoration-none" href="./marketplace.html"> <h1 class="display-2 fw-bold">Marketplace</h1> </a></li>
+                <li><a class="text-start text-white text-decoration-none" href="./Reportblog/report.html">Help Center</a></li>
+                <li><a class="text-start text-white text-decoration-none" href="./login.html">Logout</a></li>
+                <li><div class="d-flex pt-3">
+                    <i class="fa-brands fa-twitter-square fa-lg" style="color: #ffffff;"></i>
+                    <i  class="mx-4 fa-brands fa-discord fa-lg" style="color: #ffffff;"></i>  
+                    <i class="fa-brands  fa-instagram fa-lg" style="color: #ffffff;"></i>
+                </div></li>
+            </ul>
+        </div>
+    </header>
+
+</div>
+   
+<div class="container-fluid">
+    <video class="container-fluid img-fluid"  playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source class="img-fluid" src="./graphics/box_video.webm" type="video/mp4">
+      </video>
+      <div class="text-center pb-5 mb-5">
+          <h1 class="fw-bold">EXCLUSIVE ACCESS TO THE <br> DOLCE&GABBANA NFT UNIVERSE</h1>
+          <h6>LAUNCHING SOON</h6>
+        </div>
+    </div>
+<div class="container-fluid" style="background: linear-gradient(180deg, rgba(39,34,56,0) 6%, rgba(0,0,0,1) 100%), url('./graphics/bg-model.jpg'); height:95vh; background-position: center; background-size: cover;">
+    <div class="text-center text-white row align-items-center h-100">
+        <div>
+
+            <h1 class="fw-bold">The journey begins</h1>
+            <p class="my-4">Dolce&Gabbana is opening up access to their world with the launch of the DGFamily NFT community. <br> Collectors will be able to join the iconic Italian brand as they take members on a journey to experience <br> fashion in the metaverse and beyond.</p>
+            <div class="text-center"> 
+                <a href="./index.html" class="createBtn text-decoration-none rounded-0 shadow-none border border-1 border-light bg-black btn btn-primary">Craete an Account</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background: linear-gradient(180deg, rgba(39,34,56,0) 6%, rgba(0,0,0,1) 100%), url('./graphics/bg-model1.jpg'); height:95vh; background-position: center; background-size: cover;">
+    <div class="text-center text-white row align-items-center h-100">
+        <div>
+
+            <h1 class="fw-bold">Exclusive drops & collabs.
+            </h1>
+            <p class="my-4">Dolce&Gabbana is opening up access to their world with the launch of the DGFamily NFT community. <br> Collectors will be able to join the iconic Italian brand as they take members on a journey to experience <br> fashion in the metaverse and beyond.</p>
+            <div class="text-center"> 
+                <a href="./index.html" class="createBtn text-decoration-none rounded-0 shadow-none border border-1 border-light bg-black btn btn-primary">Craete an Account</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background: linear-gradient(180deg, rgba(39,34,56,0) 6%, rgba(0,0,0,1) 100%), url('./graphics/bg-model2.jpg'); height:95vh; background-position: center; background-size: cover;">
+    <div class="text-center text-white row align-items-center h-100">
+        <div>
+
+            <h1 class="fw-bold">Digital. Physical. Experiential.
+            </h1>
+            <p class="my-4">Dolce&Gabbana is opening up access to their world with the launch of the DGFamily NFT community. <br> Collectors will be able to join the iconic Italian brand as they take members on a journey to experience <br> fashion in the metaverse and beyond.</p>
+            <div class="text-center"> 
+                <a href="./index.html" class="createBtn text-decoration-none rounded-0 shadow-none border border-1 border-light bg-black btn btn-primary">Craete an Account</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-5 row justify-content-center">
+    <div class="col-lg-5">
+        <div class="text-center">
+            <h1 class="fw-bold">About the Boxes
+            </h1>
+            <p class="my-4" style="font-size: 14px">
+                DGFamily Boxes are digital collectibles (NFTs) that also serve as tiered membership to the exclusive Dolce&Gabbana universe. DGFamily members receive exclusive digital, physical, and experiential privileges as Dolce&Gabbana pushes the boundaries of luxury and culture in the metaverse. DGFamily boxes are based on the classic Italian Carretto style, and crafted in three increasingly rarer tiers.
+            </p>
+        
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid g-0 row m-0 p-0 ">
+    <div class="col-lg-6">
+        <video class="w-100"  playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source class="img-fluid" src="./graphics/black-box.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="col-lg-6 h-100 align-self-center">
+            <div class="text-start px-4">
+                <h1 class="fw-bold">The Black Box
+                </h1>
+                <p class="my-4" style="font-size: 14px">
+                    The Black Box is bold and mysterious. Holding it grants access to the first level of the DGFamily: exclusive digital/physical drops of Dolce&Gabbana apparel, a series of digital/metaverse events, and special bonuses along the way, including a special Dolce&Gabbana swag set.
+                </p>
+            </div>
+    </div>
+    
+</div>
+<div class="container-fluid g-0 row m-0 p-0 ">
+    <div class="col-lg-6 h-100 align-self-center">
+        <div class="text-start px-4">
+            <h1 class="fw-bold">The Gold Box
+            </h1>
+            <p class="my-4" style="font-size: 14px">
+                The Gold Box is sleek, shiny, and more exclusive than the Black Box. Holding it grants all of the privileges of the Black Box, and more: access to more rare Dolce&Gabbana drops and invites to various IRL events. Plus a premium Dolce&Gabbana swag set with exclusive kicks.
+            </p>
+        </div>
+</div>
+    <div class="col-lg-6">
+        <video class="w-100"  playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source class="img-fluid" src="./graphics/gold-box.mp4" type="video/mp4">
+          </video>
+    </div>
+  
+    
+</div>
+<div class="container-fluid g-0 row  ">
+    <div class="col-lg-6">
+        <video class="w-100"  playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source class="img-fluid" src="./graphics/gray-box.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="col-lg-6 h-100 align-self-center">
+            <div class="text-start px-4">
+                <h1 class="fw-bold">The Platinum Box
+                </h1>
+                <p class="my-4" style="font-size: 14px">
+                    By special access only. The Platinum Box is the pinnacle of the DGFamily community, and the most exclusive. It grants all of the privileges of the Gold Box, plus more: access to the rarest drops and most special IRL experiences, including an intimate Dolce&Gabbana offsite.
+
+                </p>
+            </div>
+    </div>
+</div>
+
+<div class="row justify-content-center pb-5 ">
+    <h1 class="my-5 py-3 fw-bold text-center">FAQs</h1>
+    <div class="col-lg-10">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   <h4 class="fw-bold ">
+                       What are DGFamily Boxes?
+                   </h4>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body ps-2 p-0 m-0">
+                    Each Box is a digital collectable that also serves as membership to the DGFamily. Members will join Dolce&Gabbana on their journey to reshape fashion in the physical universe and the metaverse.
+                    Each Box unlocks exclusive digital, physical, and experiential privileges for its owner based on the tier of the Box. </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h4 class="fw-bold ">
+                        What are the different DGFamily Box tiers?
+                    </h4>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    DGFamily boxes come in three different tiers. In order of increasing rarity they are: Black, Gold, and Platinum. Each tier is granted the benefits of its tier as well as the tiers below. For example, the Platinum box unlocks the benefits of all tiers while the Gold box holders have access to the privileges of the Gold and Black tiers.
+                    Each Box tier grants access to a series of exclusive drops (both digital and physical) and experiences (digital and/or physical depending on the tier).  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h4 class="fw-bold ">
+                        What is the whitelist and how do I get on it?
+                    </h4>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    This project utilizes a minting whitelist to allow for a smoother minting process. The whitelist will consist of a collection of wallet addresses selected via raffle or special selection. Addresses on the whitelist will be authorized to mint the collection ahead of the public mint.
+                    Submit your details to Premint for a chance at a spot and join our Discord for more opportunities.  </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                      <h4 class="fw-bold ">
+                        How do you claim physical, digital, and experiential privileges?
+                      </h4>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Boxes are eligible to claim or purchase certain physical, digital, and experiential benefits as they are created by Dolce&Gabbana and UNXD. Claiming will happen by minting the item on UNXD. Physical redemption will take place via a valid registered account on UNXD and require owners to pay for shipping and submit a valid mailing address. Physical event access will require owners to RSVP by the allotted date with personal details for the guestlist.
+                 </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <h4 class="fw-bold ">
+                        What’s the initial price, quantity, and release date?
+                      </h4>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    To be revealed soon via UNXD and Dolce&Gabbana on Twitter and Discord. Stay tuned.  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
+                      <h4 class="fw-bold ">
+                        Are there any additional costs associated with membership?
+                      </h4>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Each Box comes with an exclusive swag set based on tier (gas/shipping excluded). Future drops may have a cost to mint and/or deliver the item. DGFamily holders will also be eligible for free airdrops from future drops and collaborations from time to time.  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      <h4 class="fw-bold ">
+                        What blockchain will mint DGFamily Boxes?
+                      </h4>
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Each Box will first be minted on Ethereum Layer 1 for provenance before being transferred to owners’ wallets on UNXD’s platform, which is built on Polygon’s Layer 2 solution to benefit from lower fees and energy use.
+                 </div>
+              </div>
+          </div>
+    </div>
+</div>
+</div>
+<!-- Footer -->
+<div class=" bg-black py-5 ">
+    <div class=" row py-5 mb-5">
+        <div class="offset-lg-1 col-lg-5">
+            <div>
+                <img style="width: 8rem" class="img-fluid" src="./graphics/logo_white.png" alt="">
+            </div>
+            <p class=" pt-5 " style="color: #a0a0a0; font-size: 14px;">
+                UNXD is a curated marketplace for the best of digital <br> luxury and culture.
+            </p>
+        </div>
+        <div class="col-lg-2">
+            <div>
+                <p class="fs-5 text-white">Navigate</p>
+            </div>
+            <p class="text-white pt-3 " style="color: #93A0A0;">
+                <div>
+    
+                    <a href="./Drops.html" class="text-decoration-none nav-link1 d-inline-block  " style="color: #e6e6e6;" href="">
+                        Drops
+                    </a>
+                </div>
+                <div>
+    
+                    <a href="./about.html" class="text-decoration-none  nav-link1 d-inline-block my-2" style="color: #e6e6e6;"  href="">
+                        About
+                    </a>
+                </div>
+                <div>
+    
+                    <a href="./Reportblog/report.html" class="text-decoration-none nav-link1 d-inline-block " style="color: #e6e6e6;"  href="">
+                        Help Center
+                    </a>
+                </div>
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <div>
+                <p class="fs-5 text-white">Newsletter</p>
+            </div>
+            <p class=" pt-3 " style="color: #a0a0a0; font-size: 14px;">
+                Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating UNXD.
+            </p>
+           
+                <div class="d-flex my-4 py-1 ">        
+                    <input type="email" placeholder="Email"  class="footertext rounded-1 py-2 form-control shadow shadow-none  bg-black text-white " id="inputEmail4">
+                    <a class="btn btn-primary ms-3 pt-2 border border-0  bg-white text-dark" href="">Subscribe</a>
+                </div>
+              
+         
+            <div class="d-flex pt-3">
+                <i class="fa-brands fa-twitter-square fa-lg" style="color: #a0a0a0;"></i>
+                <i  class="mx-4 fa-brands fa-discord fa-lg" style="color: #a0a0a0;"></i>  
+                <i class="fa-brands  fa-instagram fa-lg" style="color: #a0a0a0;"></i>
+            </div>
+        </div>
+    </div>
+    <div class=" row">
+        <div class="offset-lg-1 col-lg-5">
+            <div class="pe-5">
+            
+                    <a href="./privacypolicy.html" class="text-white float-end me-5  nav-link1 d-inline-block">Privacy Policy</a>
+                
+            </div>
+           
+        </div>
+        <div class="col-lg-2">
+            <div>
+                <a href="./termsConditions.html" class="text-white nav-link1 d-inline-block">
+                    Terms of Service</a>
+            </div>
+            
+        </div>
+        <div class="col-lg-3">
+            <div>
+                <a href="./Reportblog/report.html" class= "text-white nav-link1 d-inline-block">
+                    Report a Bug</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+
+
+    <script>
+        function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+    </script>
+  </body>
+</html>
